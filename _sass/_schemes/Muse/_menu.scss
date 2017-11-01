@@ -13,7 +13,10 @@
 }
 
 .menu {
-  @include mobile() { text-align: left; }
+  @include mobile() {
+    width: 100%;
+    text-align: left;
+  }
 }
 .menu .menu-item {
   @include mobile() {
