@@ -14,7 +14,7 @@
 
 .menu .menu-item {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 5px;
   list-style: none;
 
   @media screen and (max-width: 767px) {
@@ -24,7 +24,7 @@
   a {
     display: block;
     font-size: 13px;
-    padding: 0 15px;
+    padding: 0 5px;
     line-height: inherit;
     border-bottom: 1px solid $menu-link-border;
     transition-property: background;
@@ -32,12 +32,13 @@
 
     @include mobile() {
       padding: 0;
+      &:hover { @extend %menu-a-hover; }
     }
 
     @at-root %menu-a-hover {
       background: $gainsboro;
     }
-    &:hover { @extend %menu-a-hover; }
+    &:hover { border-bottom: 1px solid $black-deep; }
   }
 
   .fa { margin-right: 5px; }
