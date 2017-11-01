@@ -31,7 +31,10 @@
 
     @include mobile() {
       padding: 0;
-      &:hover { @extend %menu-a-hover1; }
+      &:hover {
+        @extend %menu-a-hover1;
+        border: none;
+      }
     }
 
     &:hover {

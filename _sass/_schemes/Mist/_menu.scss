@@ -31,13 +31,9 @@
     border-radius: 2px;
     transition-property: background;
 
-    @include mobile() {
-      text-align: left;
-    }
-
     &:hover { background: #e1e1e1; }
     @include mobile() {
-      &:hover { border: 1px solid $black-deep; }
+      text-align: left;
     }
   }
 
