@@ -35,9 +35,6 @@
     }
     &:hover {
       border-bottom: 1px solid $black-deep;
-      @include mobile() {
-        padding: 0;
-        @extend %menu-a-hover;
       }
     }
   }
