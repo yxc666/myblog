@@ -24,7 +24,7 @@
   a {
     display: block;
     font-size: 13px;
-    padding: 0 5px;
+    padding: 0 10px;
     line-height: inherit;
     border-bottom: 1px solid $menu-link-border;
     transition-property: background;
@@ -33,12 +33,13 @@
     @at-root %menu-a-hover {
       background: $gainsboro;
     }
-
-    @include mobile() {
-      padding: 0;
-      &:hover { @extend %menu-a-hover; }
+    &:hover {
+      border-bottom: 1px solid $black-deep;
+      @include mobile() {
+        padding: 0;
+        @extend %menu-a-hover;
+      }
     }
-    &:hover { border-bottom: 1px solid $black-deep; }
   }
 
   .fa { margin-right: 5px; }
