@@ -25,10 +25,11 @@
     transition-property: background-color;
     @include the-transition();
 
+    @at-root %menu-a-hover1 {
+      background: $grey-dim;
+    }
+
     @include mobile() {
-      @at-root %menu-a-hover1 {
-        background: $grey-dim;
-      }
       padding: 0;
       &:hover { @extend %menu-a-hover1; }
     }

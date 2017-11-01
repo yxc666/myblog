@@ -14,7 +14,7 @@
 
 .menu .menu-item {
   display: inline-block;
-  margin: 0 5px;
+  margin: 0;
   list-style: none;
 
   @media screen and (max-width: 767px) {
@@ -30,13 +30,13 @@
     transition-property: background;
     @include the-transition();
 
+    @at-root %menu-a-hover {
+      background: $gainsboro;
+    }
+
     @include mobile() {
       padding: 0;
       &:hover { @extend %menu-a-hover; }
-    }
-
-    @at-root %menu-a-hover {
-      background: $gainsboro;
     }
     &:hover { border-bottom: 1px solid $black-deep; }
   }
