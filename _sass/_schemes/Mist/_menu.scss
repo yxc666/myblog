@@ -20,7 +20,7 @@
   br { display: none; }
 
   .menu-item {
-    margin: 0;
+    margin: 0 5px;
     @include mobile() { display: block; }
   }
 
