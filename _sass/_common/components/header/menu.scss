@@ -5,6 +5,7 @@
   padding-left: 0;
   float: right;
   text-align: center;
+  margin-top: -19px;
   @include mobile() {
     float: left;
     margin-top: 10px;
@@ -13,7 +14,7 @@
 
 .menu .menu-item {
   display: inline-block;
-  margin: 0 10px;
+  padding: 0 10px;
   list-style: none;
 
   @media screen and (max-width: 767px) {
