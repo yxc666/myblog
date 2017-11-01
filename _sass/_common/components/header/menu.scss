@@ -24,7 +24,7 @@
     transition-property: border-color;
     @include the-transition();
 
-    @at-root %menu-a-hover { background: $grey; }
+    @at-root %menu-a-hover { background: $gainsboro; }
     &:hover { @extend %menu-a-hover; }
   }
 
