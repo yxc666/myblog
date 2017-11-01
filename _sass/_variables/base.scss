@@ -220,7 +220,7 @@ $head-bg                        : transparent;
 // Site Meta
 $site-meta-text-align           : center;
 $brand-color                    : #111;
-$brand-bg                       : white;
+$brand-bg                       : none;
 
 $logo-font-size                 : 20px;
 $logo-font-size                 : if(type-of(jekyll-config('font.logo.size')) == 'number', jekyll-config('font.logo.size') + px, $logo-font-size);
