@@ -3,9 +3,10 @@
 .menu {
   //margin-top: 20px;
   padding-left: 0;
-  float: left;
+  float: right;
   text-align: center;
   @include mobile() {
+    float: left;
     margin-top: 10px;
   }
 }
