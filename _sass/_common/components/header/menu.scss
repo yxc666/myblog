@@ -31,12 +31,8 @@
     @at-root %menu-a-hover {
       background: $gainsboro;
     }
-    @at-root %menu-a-hover2 {
-      border-bottom: 1px solid $black-deep;
-    }
     &:hover { @extend %menu-a-hover; }
-    @include mobile() {
-      &:hover { @extend %menu-a-hover2; }
+
     }
   }
 
