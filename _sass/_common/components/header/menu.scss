@@ -32,7 +32,10 @@
 
     @include mobile() {
       padding: 0;
-      &:hover { background: #eee; }
+      &:hover {
+        background: #eee;
+        border: none;
+      }
     }
 
     &:hover {
