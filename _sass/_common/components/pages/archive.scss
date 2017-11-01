@@ -11,7 +11,8 @@
 
     @include mobile() {
       top: 5px;
-      left: -150px;
+      left: 5px;
+      margin-left: -145px;
     }
   }
 
