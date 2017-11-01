@@ -30,6 +30,10 @@
     transition-property: background;
     @include the-transition();
 
+    &:hover {
+      border-bottom: 1px solid $black-deep;
+    }
+
     @include mobile() {
       padding: 0;
       &:hover {
@@ -37,12 +41,8 @@
         border: none;
       }
     }
-
-    &:hover {
-      border-bottom: 1px solid $black-deep;
-      }
-    }
   }
+}
 
   .fa { margin-right: 5px; }
 
