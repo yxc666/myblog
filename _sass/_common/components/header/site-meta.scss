@@ -4,7 +4,10 @@
   font-weight: bolder;
   //text-align: $site-meta-text-align;
 
-  @include mobile() { text-align: center; }
+  @include mobile() {
+    margin: 0;
+    text-align: center;
+  }
 }
 
 .brand {
