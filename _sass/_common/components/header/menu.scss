@@ -30,16 +30,13 @@
     transition-property: background;
     @include the-transition();
 
-    @at-root %menu-a-hover {
-      background: $gainsboro;
+    @include mobile() {
+      padding: 0;
+      &:hover { background: #eee; }
     }
 
     &:hover {
-        border-bottom: 1px solid $black-deep;
-        @include mobile() {
-          padding: 0;
-          @extend %menu-a-hover;
-        }
+      border-bottom: 1px solid $black-deep;
       }
     }
   }
