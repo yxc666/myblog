@@ -1,7 +1,7 @@
 .site-meta {
   margin: 0;
   float: left;
-  
+  font-weight: bolder;
   //text-align: $site-meta-text-align;
 
   @include mobile() { text-align: center; }
