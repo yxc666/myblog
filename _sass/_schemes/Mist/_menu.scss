@@ -36,6 +36,9 @@
     }
 
     &:hover { background: #e1e1e1; }
+    @include mobile() {
+      &:hover { border: 1px solid $black-deep; }
+    }
   }
 
   a::before {
