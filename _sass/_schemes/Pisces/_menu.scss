@@ -19,7 +19,7 @@
   a {
     position: relative;
     box-sizing: border-box;
-    padding: 5px 20px;
+    padding: 5px 10px;
     text-align: left;
     line-height: inherit;
     transition-property: background-color;
@@ -28,8 +28,14 @@
     @at-root %menu-a-hover1 {
       background: $grey-dim;
     }
+
+    @include mobile() {
+      padding: 0;
+      &:hover { @extend %menu-a-hover1; }
+    }
+
     &:hover {
-      @extend %menu-a-hover1;
+      border-bottom: 1px solid $black-deep;
     }
   }
 
