@@ -1,10 +1,13 @@
 // Menu
 // --------------------------------------------------
 .menu {
-  margin-top: 20px;
+  //margin-top: 20px;
   padding-left: 0;
   float: left;
   text-align: center;
+  @include mobile() {
+    margin-top: 10px;
+  }
 }
 
 .menu .menu-item {
