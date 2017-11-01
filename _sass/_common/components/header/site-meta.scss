@@ -15,6 +15,10 @@
   background: transparent;
   border-bottom: none;
   &:hover { color: #111; }
+
+  @include mobile() {
+    padding-left: 20px;
+  }
 }
 
 .logo {
