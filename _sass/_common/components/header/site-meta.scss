@@ -1,6 +1,8 @@
 .site-meta {
   margin: 0;
-  text-align: $site-meta-text-align;
+  float: left;
+  
+  //text-align: $site-meta-text-align;
 
   @include mobile() { text-align: center; }
 }
