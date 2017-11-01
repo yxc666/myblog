@@ -33,6 +33,11 @@
     @at-root %menu-a-hover {
       background: $gainsboro;
     }
+    @include mobile() {
+      padding: 0;
+      &:hover { @extend %menu-a-hover; }
+    }
+
     &:hover {
       border-bottom: 1px solid $black-deep;
       }
