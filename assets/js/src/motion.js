@@ -99,7 +99,7 @@ $(document).ready(function () {
         })
         .on('sidebar.isHiding', function () {
         });
-      this.sidebarEl.trigger('sidebar.isShowing');
+      this.sidebarEl.trigger('sidebar.isHiding');
       this.showSidebar();
     },
     clickHandler: function () {
