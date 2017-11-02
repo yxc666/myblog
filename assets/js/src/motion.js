@@ -1,11 +1,7 @@
 /* global NexT: true */
 
 $(document).ready(function () {
-    $('body').css({'padding-right':'0',"transition":"all .3s linear"});
-    setTimeout(
-        $('body').css({'padding-right':'320px'})
-        ,100
-    )
+  $('.menu-item').trigger('sidebar.isShowing')
 
   NexT.motion = {};
 
