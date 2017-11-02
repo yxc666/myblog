@@ -3,8 +3,9 @@
 $(document).ready(function () {
     $('body').css({'padding-right':'0',"transition":"all .3s linear"});
     setTimeout(
-        $('body').css({'padding-right':'320px'}
-        ,100)
+        $('body').css({'padding-right':'320px'})
+        ,100
+    )
 
   NexT.motion = {};
 
