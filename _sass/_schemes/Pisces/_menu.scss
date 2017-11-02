@@ -14,23 +14,31 @@
 
 .menu .menu-item {
   display: block;
-  margin: 0;
+  margin: 0 5px;
 
   a {
     position: relative;
     box-sizing: border-box;
-    padding: 5px 20px;
+    padding: 0 10px;
     text-align: left;
     line-height: inherit;
     transition-property: background-color;
     @include the-transition();
 
     @at-root %menu-a-hover1 {
-      background: #f9f9f9;
-      border-bottom-color: white;
+      background: $grey-dim;
     }
+
+    @include mobile() {
+      padding: 0;
+      &:hover {
+        @extend %menu-a-hover1;
+        border: none;
+      }
+    }
+
     &:hover {
-      @extend %menu-a-hover1;
+      border-bottom: 1px solid $black-deep;
     }
   }
 
@@ -59,7 +67,7 @@
 }
 
 .site-nav-toggle {
-  left: 20px;
+  right: 10px;
   top: 50%;
 
   -webkit-transform:  translateY(-50%);

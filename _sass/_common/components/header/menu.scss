@@ -1,15 +1,20 @@
 // Menu
 // --------------------------------------------------
 .menu {
-  margin-top: 20px;
+  //margin-top: 20px;
   padding-left: 0;
   float: right;
   text-align: center;
+  margin-top: -19px;
+  @include mobile() {
+    float: left;
+    margin-top: 10px;
+  }
 }
 
 .menu .menu-item {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 5px;
   list-style: none;
 
   @media screen and (max-width: 767px) {
@@ -19,16 +24,26 @@
   a {
     display: block;
     font-size: 13px;
+    padding: 0 10px;
     line-height: inherit;
     border-bottom: 1px solid $menu-link-border;
-    transition-property: border-color;
+    transition-property: background;
     @include the-transition();
 
-    @at-root %menu-a-hover { border-bottom-color: $menu-link-hover-border; }
-    &:hover { @extend %menu-a-hover; }
+    &:hover {
+      border-bottom: 1px solid $black-deep;
+    }
+
+    @include mobile() {
+      padding: 0;
+      &:hover {
+        background: #eee;
+        border-color: transparent;
+      }
+    }
   }
+}
 
   .fa { margin-right: 5px; }
-}
 
 .use-motion .menu-item { opacity: 0; }

@@ -1,5 +1,11 @@
-.header-inner, .container .main-inner, .footer-inner {
+.container .main-inner, .footer-inner {
   @include mobile() { width: auto; }
+}
+.header-inner{
+  @include mobile() {
+    padding-top: 9px;
+    width: auto;
+  }
 }
 
 // embed tag
