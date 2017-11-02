@@ -1,6 +1,6 @@
 ---
 title: 老婆，爱你哟~
-description: 我爱你，爱着你，就像老师爱大米~哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈~.
+description: 我爱你，爱着你，就像老鼠爱大米~哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈~.
 categories:
  - tutorial
 tags:
