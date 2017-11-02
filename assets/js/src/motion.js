@@ -84,7 +84,7 @@ $(document).ready(function () {
   var sidebarToggleMotion = {
     toggleEl: $('.sidebar-toggle'),
     sidebarEl: $('.sidebar'),
-    munu: $('.menu'),
+    menu: $('.menu'),
     isSidebarVisible: true,
     init: function () {
       this.showSidebar();
