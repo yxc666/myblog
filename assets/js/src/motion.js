@@ -1,7 +1,6 @@
 /* global NexT: true */
 
 $(document).ready(function () {
-  console.log(sidebarToggleMotion.init().showSidebar())
 
   NexT.motion = {};
 
@@ -85,9 +84,11 @@ $(document).ready(function () {
   var sidebarToggleMotion = {
     toggleEl: $('.sidebar-toggle'),
     sidebarEl: $('.sidebar'),
+    munu: $('.menu'),
     isSidebarVisible: true,
     init: function () {
       this.toggleEl.on('click', this.clickHandler.bind(this));
+      this.menu.on('click','.menu-item',this.clickHandler.bind(this));
       this.toggleEl.on('mouseenter', this.mouseEnterHandler.bind(this));
       this.toggleEl.on('mouseleave', this.mouseLeaveHandler.bind(this));
 
