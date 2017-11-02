@@ -99,6 +99,7 @@ $(document).ready(function () {
         })
         .on('sidebar.isHiding', function () {
         });
+      this.sidebarEl.trigger('sidebar.isShowing');
     },
     clickHandler: function () {
       this.isSidebarVisible ? this.hideSidebar() : this.showSidebar();
