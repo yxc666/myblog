@@ -1,6 +1,6 @@
 ---
-title: 老婆，爱你哟~
-description: 我爱你，爱着你，就像老鼠爱大米~哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈~.
+title: 哈哈哈哈~~~
+description: 第一篇！接下来熟悉一下mackdown编辑器，准备开始写博客了！！.
 categories:
  - tutorial
 tags:
