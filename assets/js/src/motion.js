@@ -1,7 +1,7 @@
 /* global NexT: true */
 
 $(document).ready(function () {
-  $('.menu-item').trigger('sidebar.isShowing')
+  console.log(sidebarToggleMotion.init().showSidebar())
 
   NexT.motion = {};
 
