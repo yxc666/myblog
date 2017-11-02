@@ -1,10 +1,10 @@
 /* global NexT: true */
 
 $(document).ready(function () {
-    $('body').css({'padding-right':'0'});
+    $('body').css({'padding-right':'0',"transition":"all .3s linear"});
     setTimeout(
-        $('body').css({'padding-right':'320px',"transition":"padding-right .2s linear"}
-        ,500)
+        $('body').css({'padding-right':'320px'}
+        ,100)
 
   NexT.motion = {};
 
