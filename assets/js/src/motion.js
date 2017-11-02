@@ -84,12 +84,9 @@ $(document).ready(function () {
   var sidebarToggleMotion = {
     toggleEl: $('.sidebar-toggle'),
     sidebarEl: $('.sidebar'),
-    menu: $('.menu'),
     isSidebarVisible: true,
     init: function () {
-      this.sidebarEl.trigger('sidebar.isShowing');
       this.toggleEl.on('click', this.clickHandler.bind(this));
-      this.menu.on('click','.menu-item',this.clickHandler.bind(this));
       this.toggleEl.on('mouseenter', this.mouseEnterHandler.bind(this));
       this.toggleEl.on('mouseleave', this.mouseLeaveHandler.bind(this));
 
