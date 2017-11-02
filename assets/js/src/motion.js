@@ -1,7 +1,7 @@
 /* global NexT: true */
 
 $(document).ready(function () {
-  $('body').css({'padding-right':'320px'});
+  $('body').css({'padding-right':'320px',"transition":"padding-right .2s linear"});
   NexT.motion = {};
 
   var sidebarToggleLines = {
