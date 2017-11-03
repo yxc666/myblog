@@ -541,9 +541,9 @@ calendar:
   maxResults: 250
 
 algolia:
-  applicationID: L83R238AYF
-  apiKey: 5053daccb4c53b3d023270b6fd1b2014
-  indexName: myblog
+  applicationID: 'L83R238AYF'
+  apiKey: '5053daccb4c53b3d023270b6fd1b2014'
+  indexName: 'myblog'
 
 # Algolia Search
 algolia_search:
@@ -551,9 +551,9 @@ algolia_search:
   hits:
     per_page: 10
   labels:
-    input_placeholder: Search for Posts
-    hits_empty: "We didn't find any results for the search: ${query}"
-    hits_stats: "${hits} results found in ${time} ms"
+    input_placeholder: 请输入关键字
+    hits_empty: "没找到与${query}相关内容"
+    hits_stats: "${hits}条记录，用时${time} ms"
 
 
 # Local search
